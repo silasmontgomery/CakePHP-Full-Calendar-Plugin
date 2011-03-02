@@ -1,0 +1,66 @@
+-----------------------------------------
+WHAT IS THE CAKEPHP FULL CALENDAR PLUGIN?
+-----------------------------------------
+
+The CakePHP Full Calendar Plugin allows you to easily integrate
+the jQuery based Full Calendar application with your CakePHP 
+application for a slick ajax event calendar.
+
+The plugin brings the following MIT licensed software (see
+LICENCE) together to create a simple and sleek experience:
+
+-CakePHP (obviously)
+-Full Calendar (the alendar itself)
+-jQuery (required by Full Calendar)
+-jQuery UI (required for draggable and resizable events)
+-qTip (jQuery plugin to allow hover event details)
+
+
+----
+WHY?
+----
+
+While working on another project I needed a visual calendar for
+event management for multiple users/accounts. From that project
+I decided to simplify the calendar and turn it into a plugin
+because there didn't appear to be a clean (easy to install and
+use) CakePHP Calendar plugin out there.
+
+In it's current form this plugin is for a single user though I
+plan on creating a few associated plugins to allow for multiple
+users, etc.
+
+
+------------------------
+THE INSTALLATION PROCESS
+------------------------
+
+NOTE: These instructions assume you already have a working copy
+of CakePHP with a database connection on your web server.
+
+You can read up on CakePHP installation and DB config here:
+http://book.cakephp.org/#!/view/913/Development AND
+http://book.cakephp.org/#!/view/922/Database-Configuration
+
+
+INSTALLED IN 3 SIMPLE STEPS
+
+1. Download or fork the CakePHP Full Calendar Plugin at:
+   https://github.com/silasmontgomery/CakePHP-Full-Calendar-Plugin
+
+2. Copy or upload the "full_calendar-?.??" folder to your 
+   CakePHP "app/plugins" directory and rename to 
+   "full_calendar".
+
+3. Create an "events" and "event_types" table by importing the
+   "full_calendar.sql" file found in the "full_calendar/config" 
+   directory (Using PHPMyAdmin, command-line, etc).
+
+
+THAT'S IT!
+
+You should now be able to access the Full Calendar Plugin at:
+http://yoursite.com/full_calendar
+
+You should add some Event Types first. Then you can start
+scheduling some Events!
