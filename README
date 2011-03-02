@@ -9,11 +9,20 @@ application for a slick ajax event calendar.
 The plugin brings the following MIT licensed software (see
 LICENCE) together to create a simple and sleek experience:
 
--CakePHP (obviously)
--Full Calendar (the alendar itself)
--jQuery (required by Full Calendar)
--jQuery UI (required for draggable and resizable events)
--qTip (jQuery plugin to allow hover event details)
+-CakePHP (http://cakephp.org)
+ Required by this plugin
+
+-Full Calendar (http://arshaw.com/fullcalendar)
+ The jQuery based Calendar
+
+-jQuery (http://jquery.com)
+ Required by Full Calendar
+
+-jQuery UI (http://jqueryui.com)
+ Required for draggable and resizable events
+
+-qTip (http://craigsworks.com/projects/qtip)
+ A jQuery plugin for hover details
 
 
 ----
