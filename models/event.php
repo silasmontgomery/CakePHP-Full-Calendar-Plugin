@@ -28,7 +28,7 @@ class Event extends FullCalendarAppModel {
 
 	var $belongsTo = array(
 		'EventType' => array(
-			'className' => 'EventType',
+			'className' => 'FullCalendar.EventType',
 			'foreignKey' => 'event_type_id'
 		)
 	);
