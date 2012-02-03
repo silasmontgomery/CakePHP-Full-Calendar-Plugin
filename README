@@ -57,8 +57,8 @@ INSTALLED IN 3 SIMPLE STEPS
 1. Download or fork the CakePHP Full Calendar Plugin at:
    https://github.com/silasmontgomery/CakePHP-Full-Calendar-Plugin
 
-2. Copy or upload the "FullCalendar" folder to your 
-   CakePHP "app/Plugin" directory.
+2. Clone or download this repo. Create the folder "FullCalendar" 
+   in your "app/Plugin" directory and copy all the folders into it.
 
 3. Create an "events" and "event_types" table by importing the
    "FullCalendar.sql" file found in the "FullCalendar/Config" 
