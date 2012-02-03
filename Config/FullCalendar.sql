@@ -1,5 +1,5 @@
 /*
- * config/full_calendar.sql
+ * Config/FullCalendar.sql
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery

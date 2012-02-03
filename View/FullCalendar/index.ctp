@@ -1,6 +1,6 @@
 <?php
 /*
- * views/full_calendar/index.ctp
+ * View/FullCalendar/index.ctp
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery

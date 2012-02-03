@@ -1,6 +1,6 @@
 <?php
 /*
- * controllers/events_controller.php
+ * Controller/EventsController.php
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery
@@ -14,7 +14,11 @@ class EventsController extends FullCalendarAppController {
 
 	var $name = 'Events';
 
-	function index() {
+        var $paginate = array(
+            'limit' => 15
+        );
+
+        function index() {
 		$this->Event->recursive = 1;
 		$this->set('events', $this->paginate());
 	}
@@ -72,6 +76,7 @@ class EventsController extends FullCalendarAppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
+        // The feed action is called from "webroot/js/ready.js" to get the list of events (JSON)
 	function feed($id=null) {
 		$this->layout = "ajax";
 		$vars = $this->params['url'];
@@ -99,6 +104,7 @@ class EventsController extends FullCalendarAppController {
 		$this->set("json", json_encode($data));
 	}
 
+        // The update action is called from "webroot/js/ready.js" to update date/time when an event is dragged or resized
 	function update() {
 		$vars = $this->params['url'];
 		$this->Event->id = $vars['id'];

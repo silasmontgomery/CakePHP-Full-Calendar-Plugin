@@ -1,6 +1,6 @@
 <?php
 /*
- * views/events/add.ctp
+ * View/Events/add.ctp
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery

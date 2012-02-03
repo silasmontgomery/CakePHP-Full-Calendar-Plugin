@@ -1,6 +1,6 @@
 <?php
 /*
- * models/event.php
+ * Model/Event.php
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery

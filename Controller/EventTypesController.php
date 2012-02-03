@@ -1,6 +1,6 @@
 <?php
 /*
- * controllers/event_types_controller.php
+ * Controllers/EventTypesController.php
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery
@@ -13,6 +13,10 @@
 class EventTypesController extends FullCalendarAppController {
 
 	var $name = 'EventTypes';
+
+        var $paginate = array(
+            'limit' => 15
+        );
 
 	function index() {
 		$this->EventType->recursive = 0;

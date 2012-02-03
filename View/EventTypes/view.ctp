@@ -1,6 +1,6 @@
 <?php
 /*
- * views/event_types/view.ctp
+ * View/EventTypes/view.ctp
  * CakePHP Full Calendar Plugin
  *
  * Copyright (c) 2010 Silas Montgomery
@@ -11,14 +11,14 @@
  */
 ?>
 <div class="eventTypes view">
-<h2><?php  __('Event Type');?></h2>
+<h2><?php echo __('Event Type');?></h2>
 	<dl><?php $i = 0; $class = ' class="altrow"';?>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Name'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php echo __('Name'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $eventType['EventType']['name']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Color'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php echo __('Color'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $eventType['EventType']['color']; ?>
 			&nbsp;
@@ -34,16 +34,16 @@
 	</ul>
 </div>
 <div class="related">
-	<h3><?php __('Related Events');?></h3>
+	<h3><?php echo __('Related Events');?></h3>
 	<?php if (!empty($eventType['Event'])):?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
-		<th><?php __('Title'); ?></th>
-		<th><?php __('Status'); ?></th>
-		<th><?php __('Start'); ?></th>
-        <th><?php __('End'); ?></th>
-        <th><?php __('All Day'); ?></th>
-		<th><?php __('Modified'); ?></th>
+		<th><?php echo __('Title'); ?></th>
+		<th><?php echo __('Status'); ?></th>
+		<th><?php echo __('Start'); ?></th>
+        <th><?php echo __('End'); ?></th>
+        <th><?php echo __('All Day'); ?></th>
+		<th><?php echo __('Modified'); ?></th>
 		<th class="actions"></th>
 	</tr>
 	<?php
