@@ -96,7 +96,7 @@ class EventsController extends FullCalendarAppController {
 					'start'=>$event['Event']['start'],
 					'end' => $end,
 					'allDay' => $allday,
-					'url' => '/full_calendar/events/view/'.$event['Event']['id'],
+					'url' => Router::url('/') . '/full_calendar/events/view/'.$event['Event']['id'],
 					'details' => $event['Event']['details'],
 					'className' => $event['EventType']['color']
 			);
